@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EasyStudy.Packages\EasyStudy.Packages.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Requests\" />
+    </ItemGroup>
+
+</Project>
