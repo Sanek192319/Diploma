@@ -1,0 +1,26 @@
+version:  "3.9"
+
+services:
+  
+  es-db:
+    image: postgres
+    container_name : "es-db"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - "es_net"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: es
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_DB: es-db
+
+volumes:
+  db-data:
+    name: "db-data"
+
+
+networks:
+  es_net:
+    name: "es_net"
